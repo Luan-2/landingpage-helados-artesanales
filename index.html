@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tetas Heladas – Helados artesanales tipo teta con ingredientes naturales. Venta al detal y distribución mayorista." />
+  <title>Tetas Heladas – Artesanales</title>
+
+  <!-- Google Fonts: Cormorant Garamond (display) + Jost (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons via CDN (lightweight, ~4 KB gzip) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       HEADER – Navegación fija
+  ═══════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+
+      <a href="#hero" class="logo" aria-label="Inicio – Tetas Heladas">
+        <span class="logo__icon">✦</span>
+        <span class="logo__text">Tetas Heladas</span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Navegación principal">
+        <ul class="nav__list" role="list">
+          <li><a href="#nosotros"       class="nav__link">Nosotros</a></li>
+          <li><a href="#sabores"        class="nav__link">Sabores</a></li>
+          <li><a href="#distribuidores" class="nav__link">Distribuidores</a></li>
+          <li><a href="#contacto"       class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO – Primera impresión
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Portada">
+    <div class="container hero__inner">
+
+      <div class="hero__content reveal">
+        <span class="eyebrow">Artesanal · Natural · Único</span>
+        <h1 class="hero__title">
+          El sabor que<br />
+          <em>no se olvida</em>
+        </h1>
+        <p class="hero__desc">
+          Helados tipo teta elaborados con ingredientes reales y sin conservantes.
+          Disponibles al detal y en distribución mayorista.
+        </p>
+        <div class="hero__actions">
+          <a href="#sabores"        class="btn btn--primary">Explorar Sabores</a>
+          <a href="#distribuidores" class="btn btn--ghost">Para Distribuidores</a>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal reveal--delay-1" aria-hidden="true">
+        <div class="hero__blob">
+          <span class="hero__emoji">🍦</span>
+        </div>
+        <div class="hero__badge">
+          <i data-lucide="leaf" aria-hidden="true"></i>
+          100% Natural
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Separador diagonal hacia la siguiente sección -->
+    <div class="hero__divider" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       NOSOTROS – Historia de marca
+  ═══════════════════════════════════════ -->
+  <section class="section about" id="nosotros">
+    <div class="container about__inner">
+
+      <div class="about__media reveal">
+        <!--
+          Reemplaza este div por:
+          <img src="assets/img/about.jpg" alt="Elaboración artesanal de helados" />
+        -->
+        <div class="img-placeholder img-placeholder--about" aria-label="Foto de elaboración artesanal">
+          <span aria-hidden="true">🧑‍🍳</span>
+        </div>
+        <div class="about__stat-card">
+          <strong>+5</strong>
+          <span>años de tradición</span>
+        </div>
+      </div>
+
+      <div class="about__content reveal reveal--delay-1">
+        <span class="eyebrow">Quiénes Somos</span>
+        <h2 class="section__title">Hechos con tiempo,<br />no con atajos</h2>
+        <p>
+          Nuestros helados nacen de una receta familiar perfeccionada durante años.
+          Cada unidad se elabora con leche entera, fruta fresca y el proceso lento
+          que garantiza una textura cremosa sin precedentes.
+        </p>
+        <p>
+          Creemos que un buen helado no necesita ingredientes artificiales —
+          solo materia prima honesta y dedicación.
+        </p>
+        <ul class="about__features" role="list">
+          <li>
+            <i data-lucide="check-circle" aria-hidden="true"></i>
+            Sin colorantes ni conservantes artificiales
+          </li>
+          <li>
+            <i data-lucide="check-circle" aria-hidden="true"></i>
+            Leche entera de ganadería local
+          </li>
+          <li>
+            <i data-lucide="check-circle" aria-hidden="true"></i>
+            Fruta fresca de temporada
+          </li>
+          <li>
+            <i data-lucide="check-circle" aria-hidden="true"></i>
+            Proceso artesanal supervisado
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       SABORES – Catálogo de productos
+  ═══════════════════════════════════════ -->
+  <section class="section flavors" id="sabores">
+    <div class="container">
+
+      <header class="section__header reveal">
+        <span class="eyebrow">Nuestros Sabores</span>
+        <h2 class="section__title">Cada uno, una experiencia</h2>
+        <p class="section__desc">
+          Ingredientes reales en cada mordida. Ningún sabor es genérico.
+        </p>
+      </header>
+
+      <div class="flavors__grid">
+
+        <!-- Tarjeta: Coco -->
+        <article class="flavor-card reveal" style="--card-hue: 120; --card-sat: 30%">
+          <div class="flavor-card__media">
+            <!--
+              Reemplaza por:
+              <img src="assets/img/coco.jpg" alt="Helado de coco" />
+            -->
+            <div class="img-placeholder" aria-label="Helado de coco">
+              <span aria-hidden="true">🥥</span>
+            </div>
+          </div>
+          <div class="flavor-card__body">
+            <div class="flavor-card__top">
+              <h3 class="flavor-card__name">Coco</h3>
+              <span class="flavor-card__tag">Popular</span>
+            </div>
+            <p class="flavor-card__desc">
+              Coco natural rallado con base de leche entera. Refrescante y cremoso en cada bocado.
+            </p>
+            <div class="flavor-card__meta">
+              <i data-lucide="droplets" aria-hidden="true"></i>
+              <span>Sin colorantes · Fruta natural</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta: Chocolate -->
+        <article class="flavor-card reveal reveal--delay-1" style="--card-hue: 25; --card-sat: 60%">
+          <div class="flavor-card__media">
+            <div class="img-placeholder" aria-label="Helado de chocolate">
+              <span aria-hidden="true">🍫</span>
+            </div>
+          </div>
+          <div class="flavor-card__body">
+            <div class="flavor-card__top">
+              <h3 class="flavor-card__name">Chocolate</h3>
+              <span class="flavor-card__tag">Clásico</span>
+            </div>
+            <p class="flavor-card__desc">
+              Cacao oscuro de origen con crema de leche fresca. Intenso, profundo, irresistible.
+            </p>
+            <div class="flavor-card__meta">
+              <i data-lucide="droplets" aria-hidden="true"></i>
+              <span>Cacao puro · Sin azúcar añadida</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta: Mora -->
+        <article class="flavor-card reveal reveal--delay-2" style="--card-hue: 290; --card-sat: 45%">
+          <div class="flavor-card__media">
+            <div class="img-placeholder" aria-label="Helado de mora">
+              <span aria-hidden="true">🫐</span>
+            </div>
+          </div>
+          <div class="flavor-card__body">
+            <div class="flavor-card__top">
+              <h3 class="flavor-card__name">Mora</h3>
+              <span class="flavor-card__tag">Temporada</span>
+            </div>
+            <p class="flavor-card__desc">
+              Mora fresca de temporada, sin colorantes. Un equilibrio perfecto entre dulce y ácido.
+            </p>
+            <div class="flavor-card__meta">
+              <i data-lucide="droplets" aria-hidden="true"></i>
+              <span>Fruta de temporada · Antioxidante</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta: Galleta -->
+        <article class="flavor-card reveal reveal--delay-3" style="--card-hue: 38; --card-sat: 55%">
+          <div class="flavor-card__media">
+            <div class="img-placeholder" aria-label="Helado de galleta">
+              <span aria-hidden="true">🍪</span>
+            </div>
+          </div>
+          <div class="flavor-card__body">
+            <div class="flavor-card__top">
+              <h3 class="flavor-card__name">Galleta</h3>
+              <span class="flavor-card__tag">Favorito</span>
+            </div>
+            <p class="flavor-card__desc">
+              Trozos crujientes de galleta oreo en base de vainilla cremosa. El favorito de los niños.
+            </p>
+            <div class="flavor-card__meta">
+              <i data-lucide="droplets" aria-hidden="true"></i>
+              <span>Base vainilla · Trozos reales</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /flavors__grid -->
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       DISTRIBUIDORES – Sección B2B
+  ═══════════════════════════════════════ -->
+  <section class="section distributor" id="distribuidores" aria-label="Información para distribuidores">
+    <div class="container distributor__inner">
+
+      <div class="distributor__content reveal">
+        <span class="eyebrow eyebrow--light">Para Negocios</span>
+        <h2 class="section__title">¿Quieres vender<br />nuestros helados?</h2>
+        <p>
+          Ofrecemos condiciones especiales para tiendas, cafeterías, heladerías
+          y cualquier local que quiera sumar un producto artesanal diferenciado.
+        </p>
+
+        <ul class="distributor__requirements" role="list">
+          <li>
+            <i data-lucide="package" aria-hidden="true"></i>
+            <div>
+              <strong>Pedido mínimo</strong>
+              <span>30 unidades por despacho</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="tag" aria-hidden="true"></i>
+            <div>
+              <strong>Precio mayorista</strong>
+              <span>Condiciones especiales para revendedores</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="thermometer-snowflake" aria-hidden="true"></i>
+            <div>
+              <strong>Requisito esencial</strong>
+              <span>Congelador disponible en el local</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            <div>
+              <strong>Zona de cobertura</strong>
+              <span>Centro, Norte y Sur de la ciudad</span>
+            </div>
+          </li>
+        </ul>
+
+        <a class="btn btn--accent"
+           href="https://wa.me/573001234567?text=Hola%2C+me+interesa+distribuir+sus+helados+artesanales+en+mi+local.+%C2%BFPodr%C3%ADan+darme+m%C3%A1s+informaci%C3%B3n%3F"
+           target="_blank" rel="noopener noreferrer">
+          <i data-lucide="message-circle" aria-hidden="true"></i>
+          Consultar por WhatsApp
+        </a>
+      </div>
+
+      <div class="distributor__visual reveal reveal--delay-1" aria-hidden="true">
+        <div class="dist-card">
+          <i data-lucide="store"></i>
+          <strong>Tu local + nuestro helado</strong>
+          <p>Una alianza que vende sola.</p>
+        </div>
+        <div class="dist-stats">
+          <div class="dist-stat">
+            <strong>30+</strong><span>Puntos de venta activos</span>
+          </div>
+          <div class="dist-stat">
+            <strong>100%</strong><span>Satisfacción garantizada</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CONTACTO – Formulario de consultas
+  ═══════════════════════════════════════ -->
+  <section class="section contact" id="contacto">
+    <div class="container contact__inner">
+
+      <div class="contact__info reveal">
+        <span class="eyebrow">Contáctanos</span>
+        <h2 class="section__title">¿Tienes alguna<br />pregunta?</h2>
+        <p>
+          Escríbenos para consultas sobre disponibilidad, zonas de entrega
+          o simplemente para saber más de nuestros helados.
+        </p>
+
+        <ul class="contact__channels" role="list">
+          <li>
+            <i data-lucide="clock" aria-hidden="true"></i>
+            <div>
+              <strong>Horarios</strong>
+              <span>Lun – Sáb: 8 am – 6 pm · Dom: 9 am – 2 pm</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            <div>
+              <strong>Cobertura</strong>
+              <span>Centro, Norte y Sur · Consulta tu zona</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="instagram" aria-hidden="true"></i>
+            <div>
+              <strong>Redes sociales</strong>
+              <span>@tetasheladas</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 
+        Al hacer submit, JS intercepta el evento y redirige a WhatsApp.
+        Sin backend. Sin servidor. 100% del lado del cliente.
+      -->
+      <form class="contact__form reveal reveal--delay-1"
+            id="contact-form" novalidate aria-label="Formulario de contacto">
+
+        <div class="form-group">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" id="name" name="name"
+                 class="form-input" placeholder="Tu nombre o el del local"
+                 required autocomplete="name" />
+          <span class="form-error" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="form-label">Teléfono</label>
+          <input type="tel" id="phone" name="phone"
+                 class="form-input" placeholder="Número de contacto"
+                 required autocomplete="tel" />
+          <span class="form-error" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="topic" class="form-label">Tipo de consulta</label>
+          <select id="topic" name="topic" class="form-input form-select">
+            <option value="" disabled selected>Selecciona un tema</option>
+            <option value="Pedido al detal">Pedido al detal</option>
+            <option value="Distribución mayorista">Distribución mayorista</option>
+            <option value="Disponibilidad de sabores">Disponibilidad de sabores</option>
+            <option value="Zonas de entrega">Zonas de entrega</option>
+            <option value="Otra consulta">Otra consulta</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea id="message" name="message"
+                    class="form-input form-textarea"
+                    placeholder="Cuéntanos en qué podemos ayudarte..."
+                    rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full">
+          <i data-lucide="send" aria-hidden="true"></i>
+          Enviar por WhatsApp
+        </button>
+
+      </form>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="#hero" class="logo logo--light" aria-label="Inicio">
+          <span class="logo__icon">✦</span>
+          <span class="logo__text">Tetas Heladas</span>
+        </a>
+        <p>Helados artesanales con ingredientes reales. Desde 2020.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navegación secundaria">
+        <h3 class="footer__nav-title">Páginas</h3>
+        <ul role="list">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#sabores">Sabores</a></li>
+          <li><a href="#distribuidores">Distribuidores</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__social">
+        <h3 class="footer__nav-title">Síguenos</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-link">
+            <i data-lucide="instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-link">
+            <i data-lucide="facebook" aria-hidden="true"></i>
+          </a>
+          <a href="#" aria-label="TikTok" class="social-link">
+            <i data-lucide="music-2" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/TUNUMERODETELEFONO" aria-label="WhatsApp"
+             class="social-link" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Tetas Heladas. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════
+       BOTÓN FLOTANTE WHATSAPP
+  ═══════════════════════════════════════ -->
+  <a class="wa-float"
+     href="https://wa.me/TUNUMERODETELEFONO?text=Hola%2C+quiero+m%C3%A1s+informaci%C3%B3n+sobre+los+helados+%F0%9F%8D%A6"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Contáctanos por WhatsApp">
+    <i data-lucide="message-circle" aria-hidden="true"></i>
+  </a>
+
+
+  <!-- Lógica propia -->
+  <script src="js/main.js"></script>
+</body>
+</html>
