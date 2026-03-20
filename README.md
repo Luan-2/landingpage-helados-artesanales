@@ -97,15 +97,4 @@ Ambas se cargan desde CDN; si el usuario no tiene conexión usará fuentes del s
 
 ---
 
-## Extensiones futuras sugeridas
-
-| Función | Tecnología |
-|---|---|
-| Envío de formulario por email | [Formspree](https://formspree.io) (gratis, solo cambia el `action` del form) |
-| Carrito de compras | JavaScript + `localStorage` |
-| Gestión de contenido | Netlify CMS o Decap CMS (headless, sin backend propio) |
-| Pagos en línea | Stripe o MercadoPago (requiere backend) |
-
----
-
 *Proyecto personal – v2.0 · HTML5 + CSS3 + JS Vanilla · Sin backend*
