@@ -1,5 +1,5 @@
 /**
- * main.js – Tetas Heladas
+ * main.js – Helados del barrio
  *
  * Módulos:
  *  1. Icons        – Inicializa Lucide Icons
