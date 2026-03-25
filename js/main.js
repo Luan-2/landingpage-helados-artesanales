@@ -1,13 +1,12 @@
 /**
  * main.js – Helados del barrio
  *
- * Módulos:
- *  1. Icons        – Inicializa Lucide Icons
- *  2. Navigation   – Toggle móvil + active link tracking
- *  3. Header       – Clase "scrolled" al hacer scroll
- *  4. ScrollReveal – IntersectionObserver para animaciones de entrada
- *  5. ContactForm  – Validación simple + redirección a WhatsApp
- *  6. Footer year  – Año dinámico en el copyright
+ * Módulos
+ *  1. Navigation   – Toggle móvil + active link tracking
+ *  2. Header       – Clase "scrolled" al hacer scroll
+ *  3. ScrollReveal – IntersectionObserver para animaciones de entrada
+ *  4. ContactForm  – Validación simple + redirección a WhatsApp
+ *  5. Footer year  – Año dinámico en el copyright
  */
 
 'use strict';
@@ -17,16 +16,7 @@ const WA_NUMBER = '5730012345'; // ej: 573001234567
 
 
 /* ================================================================
-   1. LUCIDE ICONS
-   Renderiza todos los <i data-lucide="..."> del documento.
-   ================================================================ */
-document.addEventListener('DOMContentLoaded', () => {
-  if (typeof lucide !== 'undefined') lucide.createIcons();
-});
-
-
-/* ================================================================
-   2. NAVIGATION
+   1. NAVIGATION
    ================================================================ */
 const navToggle = document.getElementById('nav-toggle');
 const mainNav   = document.getElementById('main-nav');
@@ -37,10 +27,9 @@ function toggleMenu() {
   const isOpen = mainNav.classList.toggle('is-open');
   navToggle.setAttribute('aria-expanded', isOpen);
 
-  // Cambia el ícono hamburguesa ↔ X
+  // CAMBIO AQUÍ: Cambia las clases de Font Awesome según el estado del menú
   const icon = navToggle.querySelector('i');
-  icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
-  if (typeof lucide !== 'undefined') lucide.createIcons();
+  icon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
 }
 
 navToggle.addEventListener('click', toggleMenu);
@@ -68,9 +57,12 @@ function updateActiveLink() {
   });
 }
 
+// Escuchar el scroll para actualizar el enlace activo
+window.addEventListener('scroll', updateActiveLink);
+
 
 /* ================================================================
-   3. HEADER SCROLL
+   2. HEADER SCROLL
    Añade la clase "scrolled" después de 60px de scroll.
    ================================================================ */
 const siteHeader = document.getElementById('site-header');
@@ -84,7 +76,7 @@ window.addEventListener('scroll', handleHeaderScroll, { passive: true });
 
 
 /* ================================================================
-   4. SCROLL REVEAL
+   3. SCROLL REVEAL
    IntersectionObserver: agrega "is-visible" cuando el elemento
    entra al viewport. Sin librerías externas.
    ================================================================ */
@@ -104,7 +96,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 
 /* ================================================================
-   5. FORMULARIO DE CONTACTO → WHATSAPP
+   4. FORMULARIO DE CONTACTO → WHATSAPP
    Valida los campos requeridos en el cliente y, si todo es
    correcto, construye un mensaje formateado y abre WhatsApp.
    Sin backend ni servidor.
@@ -182,7 +174,7 @@ if (contactForm) {
 
 
 /* ================================================================
-   6. AÑO DINÁMICO EN EL FOOTER
+   5. AÑO DINÁMICO EN EL FOOTER
    ================================================================ */
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();

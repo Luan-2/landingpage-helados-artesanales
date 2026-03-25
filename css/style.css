@@ -98,6 +98,13 @@ button, input, select, textarea {
 }
 button { cursor: pointer; border: none; background: none; }
 
+i[class^="fa-"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
 
 /* ----------------------------------------------------------------
    3. BASE – Tipografía
@@ -264,7 +271,10 @@ em { font-style: italic; color: var(--clr-primary); }
   font-size: var(--fs-xs);
   color: var(--clr-text-muted);
 }
-.flavor-card__meta svg { width: 14px; height: 14px; flex-shrink: 0; }
+.flavor-card__meta i { 
+  font-size: 14px; /* Antes width: 14px */
+  flex-shrink: 0; 
+}
 
 /* ── Formulario ── */
 .form-group  { display: flex; flex-direction: column; gap: .35rem; }
@@ -377,7 +387,7 @@ em { font-style: italic; color: var(--clr-primary); }
   transition: color var(--ease);
 }
 .nav-toggle:hover  { color: var(--clr-primary); }
-.nav-toggle svg    { width: 24px; height: 24px; }
+.nav-toggle i {font-size: 24px;}
 
 /* Nav móvil desplegado */
 .nav.is-open {
@@ -489,7 +499,10 @@ em { font-style: italic; color: var(--clr-primary); }
   gap: .4rem;
   box-shadow: var(--shadow-md);
 }
-.hero__badge svg { width: 14px; height: 14px; color: var(--clr-primary); }
+.hero__badge i { 
+  font-size: 14px; 
+  color: var(--clr-primary); 
+}
 
 /* Divisor diagonal */
 .hero__divider {
@@ -549,8 +562,8 @@ em { font-style: italic; color: var(--clr-primary); }
   font-size: var(--fs-sm);
   font-weight: 500;
 }
-.about__features svg {
-  width: 18px; height: 18px;
+.about__features i {
+  font-size: 18px; 
   color: var(--clr-primary);
   flex-shrink: 0;
 }
@@ -602,8 +615,8 @@ em { font-style: italic; color: var(--clr-primary); }
   align-items: flex-start;
   gap: var(--sp-sm);
 }
-.distributor__requirements svg {
-  width: 22px; height: 22px;
+.distributor__requirements i {
+  font-size: 22px; 
   color: var(--clr-primary);
   flex-shrink: 0;
   margin-top: .1rem;
@@ -631,7 +644,12 @@ em { font-style: italic; color: var(--clr-primary); }
   padding: var(--sp-md) var(--sp-lg);
   text-align: center;
 }
-.dist-card svg    { width: 36px; height: 36px; color: var(--clr-primary); margin-inline: auto; margin-bottom: var(--sp-xs); }
+.dist-card i { 
+  font-size: 36px; /* Antes width: 36px */
+  color: var(--clr-primary); 
+  margin-inline: auto; 
+  margin-bottom: var(--sp-xs); 
+}
 .dist-card strong { display: block; font-size: var(--fs-md); font-family: var(--ff-display); color: var(--clr-white); margin-bottom: .25rem; }
 .dist-card p      { font-size: var(--fs-sm); color: rgba(255,255,255,.55); max-width: none; }
 
@@ -676,8 +694,8 @@ em { font-style: italic; color: var(--clr-primary); }
   align-items: flex-start;
   gap: var(--sp-sm);
 }
-.contact__channels svg {
-  width: 20px; height: 20px;
+.contact__channels i {
+  font-size: 20px;
   color: var(--clr-primary);
   flex-shrink: 0;
   margin-top: .2rem;
@@ -748,7 +766,9 @@ em { font-style: italic; color: var(--clr-primary); }
   border-color: var(--clr-primary);
   background: rgba(212,131,42,.15);
 }
-.social-link svg { width: 16px; height: 16px; }
+.social-link i { 
+  font-size: 16px; 
+}
 
 .footer__bottom {
   border-top: 1px solid rgba(255,255,255,.08);
@@ -780,7 +800,9 @@ em { font-style: italic; color: var(--clr-primary); }
   transform: scale(1.1) translateY(-2px);
   box-shadow: 0 8px 28px rgba(37,211,102,.5);
 }
-.wa-float svg { width: 26px; height: 26px; }
+.wa-float i { 
+  font-size: 26px; /* Antes width: 26px */
+}
 
 
 /* ----------------------------------------------------------------
